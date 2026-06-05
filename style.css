@@ -1,0 +1,293 @@
+/* ============================================
+   PERFIL — Cauã Ribeiro da Silva
+   Desenvolvimento Front End I — Unijorge
+   ============================================ */
+
+/* ===== RESET & BASE ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    background-color: #f4f6f9;
+    color: #1a1a2e;
+    line-height: 1.7;
+}
+
+/* ===== TIPOGRAFIA ===== */
+h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1a1a2e;
+    margin-bottom: 20px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #1a3a6e;
+}
+
+h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+p {
+    font-size: 0.95rem;
+    color: #444466;
+    margin-bottom: 14px;
+}
+
+a {
+    color: #1a3a6e;
+    text-decoration: none;
+}
+
+/* ===== HEADER ===== */
+header {
+    background-color: #1a1a2e;
+    padding: 48px 20px 36px;
+    text-align: center;
+    border-bottom: 4px solid #1a3a6e;
+}
+
+/* ===== FOTO DE PERFIL ===== */
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top center;
+    border: 3px solid #1a3a6e;
+    margin-bottom: 16px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== CARGO ===== */
+.cargo {
+    font-size: 0.88rem;
+    color: #8899bb;
+    margin-top: 4px;
+    margin-bottom: 24px;
+    font-weight: 400;
+}
+
+/* ===== NAVEGAÇÃO ===== */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #aabbdd;
+    text-decoration: none;
+    padding: 6px 16px;
+    border: 1px solid #2a3a5e;
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+
+nav a:hover {
+    background-color: #1a3a6e;
+    color: #ffffff;
+    border-color: #1a3a6e;
+}
+
+/* ===== MAIN ===== */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px 20px 40px;
+}
+
+/* ===== SEÇÕES ===== */
+#sobre,
+#habilidades,
+#formacao {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 32px;
+    margin-top: 24px;
+    border: 1px solid #dde2ee;
+}
+
+/* ===== SOBRE MIM ===== */
+#sobre p {
+    color: #333355;
+}
+
+strong {
+    color: #1a1a2e;
+    font-weight: 600;
+}
+
+em {
+    color: #1a3a6e;
+    font-style: italic;
+}
+
+/* ===== HABILIDADES ===== */
+.lista-habilidades {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 24px;
+    padding: 0;
+}
+
+.habilidade-item {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #1a3a6e;
+    background-color: #eef2fa;
+    border: 1px solid #c0ccee;
+    border-radius: 20px;
+    padding: 6px 18px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.habilidade-item:hover {
+    background-color: #1a3a6e;
+    color: #ffffff;
+    border-color: #1a3a6e;
+}
+
+.lista-destaque {
+    padding-left: 20px;
+}
+
+.lista-destaque li {
+    font-size: 0.92rem;
+    color: #555577;
+    margin-bottom: 6px;
+}
+
+/* ===== TABELA DE FORMAÇÃO ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 0.75rem;
+    color: #9999bb;
+    text-align: left;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+thead {
+    background-color: #1a1a2e;
+}
+
+th {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #aabbdd;
+    text-align: left;
+    padding: 12px 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+}
+
+td {
+    font-size: 0.88rem;
+    color: #444466;
+    padding: 12px 14px;
+    border-bottom: 1px solid #eef0f8;
+}
+
+tbody tr:hover {
+    background-color: #f7f9ff;
+}
+
+.status-andamento {
+    color: #1a3a6e;
+    font-weight: 600;
+    font-size: 0.82rem;
+}
+
+.status-concluido {
+    color: #888899;
+    font-size: 0.82rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #1a1a2e;
+    border-top: 4px solid #1a3a6e;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+address {
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+address p {
+    font-size: 0.88rem;
+    color: #8899bb;
+    margin-bottom: 6px;
+}
+
+address a {
+    color: #aabbdd;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+address a:hover {
+    color: #ffffff;
+}
+
+/* ===== LINKS SOCIAIS ===== */
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.link-social {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #8899bb;
+    text-decoration: none;
+    border: 1px solid #2a3a5e;
+    padding: 6px 16px;
+    border-radius: 20px;
+    transition: all 0.2s;
+}
+
+.link-social:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+/* ===== COPYRIGHT ===== */
+small {
+    font-size: 0.72rem;
+    color: #445566;
+}
